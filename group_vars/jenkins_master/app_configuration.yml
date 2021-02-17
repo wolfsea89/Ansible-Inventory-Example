@@ -1,0 +1,3 @@
+invenory_group_jenkins_master_app_configuration:
+  master_number_of_executors: 10
+  slaveAgentPort: 50000
