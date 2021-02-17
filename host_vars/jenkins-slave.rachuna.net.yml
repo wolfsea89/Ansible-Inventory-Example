@@ -1,0 +1,11 @@
+ansible_host: 10.1.0.251
+inventory_host_os_distribution: "Ubuntu"
+
+inventory_group_jenkins_slave_app_configuration:
+  workers: 5
+  executors: 1
+  labels:
+  - slave_linux
+  - slave_ci_build
+  - slave_ci_publish
+  - slave_ci_docker

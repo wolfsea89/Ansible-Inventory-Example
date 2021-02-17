@@ -4,6 +4,7 @@ inventory_group_jenkins_technical_account:
   shell: /bin/bash
   groups: docker, sudo
   uid: 30001
+  gid: 30000
 
 inventory_group_jenkins_slaves_group:
   name: jenkins_slaves
