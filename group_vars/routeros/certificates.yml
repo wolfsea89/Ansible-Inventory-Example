@@ -1,0 +1,5 @@
+inventory_group_routeros_certificates:
+  name: ""
+  key: ""
+  crt: ""
+  passphrase: ""

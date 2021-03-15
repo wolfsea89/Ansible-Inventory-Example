@@ -1,0 +1,7 @@
+inventory_group_routeros_wireless_security_profiles:
+  default:
+    name: default
+    password: "password"
+  UsersWifiNetwork:
+    name: "Users Wifi Network"
+    password: "PaSSw0rd!"
