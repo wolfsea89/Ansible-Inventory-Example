@@ -7,9 +7,17 @@ inventory_group_routeros_dns:
   cache_max_ttl: "1d"
 
 iventory_group_routeros_dns_static_records:
-  - name: "router.rachuna.net"
+  - name: "mr-rou-001.rachuna.net"
     address: "10.0.0.1"
     comment: "Router Mikrotik"
+    disabled: "no"
+    regexp: ""
+    ttl: 1d
+    type: 'A'
+
+  - name: "router.rachuna.net"
+    address: "10.0.0.1"
+    comment: ""
     disabled: "no"
     regexp: ""
     ttl: 1d
