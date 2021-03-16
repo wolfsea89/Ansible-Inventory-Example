@@ -1,0 +1,2 @@
+ansible_host: docker-002.rachuna.net
+inventory_host_os_distribution: Ubuntu
