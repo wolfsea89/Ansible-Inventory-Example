@@ -1,2 +1,2 @@
-ansible_host: 10.1.0.253
+ansible_host: jenkins-master.rachuna.net
 inventory_host_os_distribution: Ubuntu

@@ -1,4 +1,4 @@
-ansible_host: 10.1.0.251
+ansible_host: jenkins-slave.rachuna.net
 inventory_host_os_distribution: "Ubuntu"
 
 inventory_group_jenkins_slave_app_configuration:
