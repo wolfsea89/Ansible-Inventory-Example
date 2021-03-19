@@ -1,9 +1,11 @@
 inventory_group_all_users:
+  none:
   mrachuna:
+    gecos: "Maciej Rachuna"
+    state: present
     git:
       name: "Maciej Rachuna"
       email: rachuna.maciej@gmail.com
     ssh:
       private_key: ""
-      public_key: ""
-  none:
+      public_key:  ""

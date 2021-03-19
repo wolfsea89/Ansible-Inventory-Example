@@ -1,0 +1,4 @@
+inventory_group_all_certificates: 
+  ca_crt: ""
+  jenkins_crt: ""
+  jenkins_key: ""
