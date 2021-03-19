@@ -1,0 +1,8 @@
+ansible_host: localhost
+
+invnetory_host_users:
+  - name: mrachuna
+    groups:
+      - adm
+      - docker
+      - sudo
