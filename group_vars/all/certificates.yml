@@ -1,4 +1,6 @@
-inventory_group_all_certificates: 
+inventory_group_all_certificates:
   ca_crt: ""
+  router_crt: ""
+  router_key: ""
   jenkins_crt: ""
   jenkins_key: ""

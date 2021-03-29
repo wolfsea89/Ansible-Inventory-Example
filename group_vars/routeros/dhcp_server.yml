@@ -3,12 +3,12 @@ inventory_group_routeros_pools:
     name: "users-network-pool"
     comment: "Users Network Pool"
     ranges: "10.1.0.2-10.1.0.254"
-  
+
   admins_network_pool:
     name: "admins-network-pool"
     comment: "Admins Network Pool"
     ranges: "10.254.0.2-10.254.0.10"
-  
+
   proxmox_network_pool:
     name: "proxmox-network-pool"
     comment: "Proxmox Network Pool"
@@ -24,12 +24,12 @@ inventory_group_routeros_dhcp_servers:
     name: "admins-network-dhcp"
     interface: "{{ inventory_group_routeros_ethernet_interfaces.ether5.name }}"
     address_pool: "{{ inventory_group_routeros_pools.admins_network_pool.name }}"
-  
-  prod_network_dhcp:
+
+  proxmox_network_dhcp:
     name: "proxmox-network-dhcp"
     interface: "{{ inventory_group_routeros_bridges_interfaces.lan_prod.name }}"
     address_pool: "{{ inventory_group_routeros_pools.proxmox_network_pool.name }}"
-  
+
   users_network_dhcp:
     name: "users-network-dhcp"
     interface: "{{ inventory_group_routeros_bridges_interfaces.lan_users.name }}"
@@ -46,27 +46,35 @@ inventory_group_routeros_dhcp_networks:
   admins_network_dhcp:
     address: "10.254.0.0/24"
     comment: "Admin Network"
-    dns_server: "10.254.0.1" 
+    dns_server: "10.254.0.1"
     gateway: "10.254.0.1"
     domain: "rachuna.net"
-  
+    next_server: 10.3.0.1
+    boot_file_name: "/tftpboot/pxelinux.0"
+
   proxmox_network_dhcp:
     address: "10.2.0.0/24"
     comment: "Proxmox Network"
-    dns_server: "10.2.0.1" 
+    dns_server: "10.2.0.1"
     gateway: "10.2.0.1"
     domain: "rachuna.net"
+    next_server: 10.3.0.1
+    boot_file_name: "/tftpboot/pxelinux.0"
 
-  proxmox_network_dhcp:
+  prod_network_dhcp:
     address: "10.3.0.0/24"
     comment: "Proxmox Network"
-    dns_server: "10.3.0.1" 
+    dns_server: "10.3.0.1"
     gateway: "10.3.0.1"
     domain: "rachuna.net"
+    next_server: 10.3.0.1
+    boot_file_name: "/tftpboot/pxelinux.0"
 
   users_network_dhcp:
     address: "10.1.0.0/24"
     comment: "Users Network"
-    dns_server: "10.1.0.1" 
+    dns_server: "10.1.0.1"
     gateway: "10.1.0.1"
     domain: "rachuna.net"
+    next_server: 10.3.0.1
+    boot_file_name: "/tftpboot/pxelinux.0"

@@ -6,7 +6,7 @@ inventory_group_routeros_list_interfaces:
         comment: "WAN"
   list_lan_users:
     name: LIST-LAN-USERS
-    interfaces: 
+    interfaces:
       - name: "{{ inventory_group_routeros_wireless_interfaces.wlan1.name }}"
       - name: "{{ inventory_group_routeros_wireless_interfaces.wlan2.name }}"
         comment: "LAN-USERS"
@@ -17,7 +17,7 @@ inventory_group_routeros_list_interfaces:
         comment: "LAN-ADMINS"
   list_lan_proxmox:
     name: LIST-LAN-PROXMOX
-    interfaces: 
+    interfaces:
       - name: "{{ inventory_group_routeros_ethernet_interfaces.ether2.name }}"
       - name: "{{ inventory_group_routeros_ethernet_interfaces.ether3.name }}"
       - name: "{{ inventory_group_routeros_ethernet_interfaces.ether4.name }}"
@@ -27,7 +27,7 @@ inventory_group_routeros_wireless_interfaces:
   wlan1:
     name: WiFi-LAN-01
     comment: "SSID: {{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"
-    ssid: "{{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"  
+    ssid: "{{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"
     security_profile: "{{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"
     band: "2ghz-b/g/n"
     channel_width: "20/40mhz-XX"
@@ -38,7 +38,7 @@ inventory_group_routeros_wireless_interfaces:
       store_on_disk: "no"
   wlan2:
     name: WiFi-LAN-02
-    ssid: "{{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"  
+    ssid: "{{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"
     band: "5ghz-a/n/ac"
     channel_width: "20/40/80mhz-XXXX"
     security_profile: "{{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"
@@ -51,7 +51,7 @@ inventory_group_routeros_wireless_interfaces:
 inventory_group_routeros_ethernet_interfaces:
   ether1:
     name: "WAN-01"
-    comment: "WAN-01 - VECTRA"
+    comment: "WAN-01"
     graphing:
       allow_address: 0.0.0.0/0
       store_on_disk: "no"
@@ -112,7 +112,7 @@ inventory_group_routeros_bridges_interfaces:
       - name: LIST-LAN-USERS
         trusted: "no"
 
-inventory_group_routeros_vlan_interfaces: 
+inventory_group_routeros_vlan_interfaces:
   default: # if one element in dictionary
   vlan_prod:
     name: VLAN-PROD

@@ -1,5 +1,5 @@
 inventory_group_routeros_certificates:
-  name: ""
-  key: ""
-  crt: ""
+  name: "router.rachuna.net"
+  key: "{{ inventory_group_all_certificates.router_key }}"
+  crt: "{{ inventory_group_all_certificates.router_crt }}"
   passphrase: ""
