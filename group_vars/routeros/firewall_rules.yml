@@ -4,101 +4,101 @@ inventory_group_routeros_firewall_rules:
     chain: input
     comment: "DHCP from WAN"
     disabled: "no"
-    in_interface_list: LIST-WAN
+    in-interface-list: LIST-WAN
     protocol: dccp
   ssh_from_wan:
     action: reject
     chain: input
     comment: "SSH from WAN"
     disabled: "no"
-    in_interface_list: LIST-WAN
+    in-interface-list: LIST-WAN
     protocol: tcp
-    reject_with: icmp-network-unreachable
-    dst_port: 22
+    reject-with: icmp-network-unreachable
+    dst-port: 22
   ftp_data_from_wan:
     action: reject
     chain: input
     comment: "FTP-DATA from WAN"
     disabled: "no"
-    in_interface_list: LIST-WAN
+    in-interface-list: LIST-WAN
     protocol: tcp
-    reject_with: icmp-network-unreachable
-    dst_port: 20
+    reject-with: icmp-network-unreachable
+    dst-port: 20
   ftp_from_wan:
     action: reject
     chain: input
     comment: "FTP from WAN"
     disabled: "no"
-    in_interface_list: LIST-WAN
+    in-interface-list: LIST-WAN
     protocol: tcp
-    reject_with: icmp-network-unreachable
-    dst_port: 21
+    reject-with: icmp-network-unreachable
+    dst-port: 21
   telnet_from_wan:
     action: reject
     chain: input
     comment: "Telnet from WAN"
     disabled: "no"
-    in_interface_list: LIST-WAN
+    in-interface-list: LIST-WAN
     protocol: tcp
-    reject_with: icmp-network-unreachable
-    dst_port: 23
+    reject-with: icmp-network-unreachable
+    dst-port: 23
   smtp_from_wan:
     action: reject
     chain: input
     comment: "SMTP from WAN"
     disabled: "no"
-    in_interface_list: LIST-WAN
+    in-interface-list: LIST-WAN
     protocol: tcp
-    reject_with: icmp-network-unreachable
-    dst_port: 25
+    reject-with: icmp-network-unreachable
+    dst-port: 25
   dns_from_wan:
     action: reject
     chain: input
     comment: "DNS from WAN"
     disabled: "no"
-    in_interface_list: LIST-WAN
+    in-interface-list: LIST-WAN
     protocol: tcp
-    reject_with: icmp-network-unreachable
-    dst_port: 53
+    reject-with: icmp-network-unreachable
+    dst-port: 53
   http_from_wan:
     action: reject
     chain: input
     comment: "HTTP from WAN"
     disabled: "no"
-    in_interface_list: LIST-WAN
+    in-interface-list: LIST-WAN
     protocol: tcp
-    reject_with: icmp-network-unreachable
-    dst_port: 80
+    reject-with: icmp-network-unreachable
+    dst-port: 80
   windbox_from_wan:
     action: reject
     chain: input
     comment: "Windbox from WAN"
     disabled: "no"
-    in_interface_list: LIST-WAN
+    in-interface-list: LIST-WAN
     protocol: tcp
-    reject_with: icmp-network-unreachable
-    dst_port: 8291
+    reject-with: icmp-network-unreachable
+    dst-port: 8291
   drop_invalid:
     action: drop
     chain: input
     comment: "drop invalid"
-    connection_state: invalid
+    connection-state: invalid
     disabled: "no"
   fasttrack_connection:
     action: fasttrack-connection
     chain: forward
     comment: "fasttrack"
-    connection_state: established,related
+    connection-state: established,related
     disabled: "no"
   accept_established_related_untracked:
     action: accept
     chain: input
     comment: "accept established,related,untracked"
-    connection_state: established,related,untracked
+    connection-state: established,related,untracked
     disabled: "no"
   forward_established_related_untracked:
     action: accept
     chain: forward
     comment: "forward established,related,untracked"
-    connection_state: established,related,untracked
+    connection-state: established,related,untracked
     disabled: "no"

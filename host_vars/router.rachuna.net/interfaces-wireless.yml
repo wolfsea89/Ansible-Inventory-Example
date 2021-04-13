@@ -1,0 +1,24 @@
+inventory_host_routeros_wireless_interfaces:
+  wlan1:
+    name: WiFi-LAN-01
+    comment: "SSID: {{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"
+    ssid: "{{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"
+    security-profile: "{{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"
+    band: "2ghz-b/g/n"
+    channel-width: "20/40mhz-XX"
+    address: "10.0.0.4/24"
+    network: "10.0.0.0"
+    graphing:
+      allow-address: 10.0.0.0/8
+      store-on-disk: "no"
+  wlan2:
+    name: WiFi-LAN-02
+    ssid: "{{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"
+    band: "5ghz-a/n/ac"
+    channel-width: "20/40/80mhz-XXXX"
+    security-profile: "{{ inventory_group_routeros_wireless_security_profiles.UsersWifiNetwork.name }}"
+    address: "10.0.0.5/24"
+    network: "10.0.0.0"
+    graphing:
+      allow-address: 10.0.0.0/8
+      store-on-disk: "no"

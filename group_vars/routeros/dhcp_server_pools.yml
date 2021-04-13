@@ -1,0 +1,20 @@
+inventory_group_routeros_pools:
+  users_network_pool:
+    name: "users-network-pool"
+    comment: "Users Network Pool"
+    ranges: "10.1.0.2-10.1.0.254"
+
+  admins_network_pool:
+    name: "admins-network-pool"
+    comment: "Admins Network Pool"
+    ranges: "10.254.0.2-10.254.0.10"
+
+  proxmox_network_pool:
+    name: "proxmox-network-pool"
+    comment: "Proxmox Network Pool"
+    ranges: "10.2.0.2-10.2.0.254"
+
+  prod_network_pool:
+    name: "prod-network-pool"
+    comment: "Prod Network Pool"
+    ranges: "10.3.0.2-10.3.0.254"
