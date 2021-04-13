@@ -1,0 +1,11 @@
+inventory_group_routeros_dhcp_leaves:
+  mr-vm-002:
+    client-id: 1:a4:b1:c1:9:66:72
+    address: 10.1.0.2
+    mac-address: A4:B1:C1:09:66:72
+    server: users-network-dhcp
+  mr-vm-100:
+    client-id: 1:8:0:27:a7:ee:e4
+    address: 10.1.0.100
+    mac-address: 08:00:27:A7:EE:E4
+    server: users-network-dhcp

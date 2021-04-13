@@ -1,0 +1,37 @@
+
+inventory_group_routeros_dhcp_networks:
+  admins_network_dhcp:
+    address: "10.254.0.0/24"
+    comment: "Admin Network"
+    dns-server: "10.254.0.1"
+    gateway: "10.254.0.1"
+    domain: "rachuna.net"
+    next-server: 10.3.0.1
+    boot-file-name: "/tftpboot/pxelinux.0"
+
+  proxmox_network_dhcp:
+    address: "10.2.0.0/24"
+    comment: "Proxmox Network"
+    dns-server: "10.2.0.1"
+    gateway: "10.2.0.1"
+    domain: "rachuna.net"
+    next-server: 10.3.0.1
+    boot-file-name: "/tftpboot/pxelinux.0"
+
+  prod_network_dhcp:
+    address: "10.3.0.0/24"
+    comment: "Proxmox Network"
+    dns-server: "10.3.0.1"
+    gateway: "10.3.0.1"
+    domain: "rachuna.net"
+    next-server: 10.3.0.1
+    boot-file-name: "/tftpboot/pxelinux.0"
+
+  users_network_dhcp:
+    address: "10.1.0.0/24"
+    comment: "Users Network"
+    dns-server: "10.1.0.1"
+    gateway: "10.1.0.1"
+    domain: "rachuna.net"
+    next-server: 10.3.0.1
+    boot-file-name: "/tftpboot/pxelinux.0"

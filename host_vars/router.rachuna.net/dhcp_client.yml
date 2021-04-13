@@ -1,0 +1,4 @@
+---
+inventory_host_routeros_dhcp_clients:
+  - comment: "{{ inventory_host_routeros_ethernet_interfaces.ether1.comment }}"
+    interface: "{{ inventory_host_routeros_ethernet_interfaces.ether1.name }}"
