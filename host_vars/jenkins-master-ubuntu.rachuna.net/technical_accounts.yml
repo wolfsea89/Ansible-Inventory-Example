@@ -1,0 +1,11 @@
+inventory_host_jenkins_technical_account:
+  username: jenkins
+  comment: "Jenkins - technical user account"
+  shell: /bin/bash
+  system_groups: docker, sudo
+  uid: 30001
+  gid: 30000
+
+inventory_host_add_workers_to_system_groups:
+  - jenkins
+  - docker

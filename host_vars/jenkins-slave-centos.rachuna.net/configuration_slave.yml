@@ -1,6 +1,6 @@
-inventory_group_jenkins_slave_app_configuration:
+inventory_host_jenkins_slave_app_configuration:
   workers: 5
-  executors: 5
+  executors: 1
   labels:
   - slave_linux
   - slave_ci_build

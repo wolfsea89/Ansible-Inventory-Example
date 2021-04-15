@@ -1,0 +1,3 @@
+inventory_group_jenkins_slaves_group:
+  name: jenkins_slaves
+  gid: 44021

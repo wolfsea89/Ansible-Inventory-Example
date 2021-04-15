@@ -1,0 +1,4 @@
+inventory_host_jenkins_ssl_certificate:
+  ca_crt:     "{{ inventory_group_all_certificates.ca_crt }}"
+  server_crt: "{{ inventory_group_all_certificates.jenkins_master_ubuntu_crt }}"
+  server_key: "{{ inventory_group_all_certificates.jenkins_master_ubuntu_key }}"
