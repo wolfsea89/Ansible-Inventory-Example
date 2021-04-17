@@ -1,4 +1,5 @@
 invenory_group_jenkins_master_app_configuration:
+  jenkins_docker_image_path: wolfsea89/jenkins_master_snapshot:2021.4.13.3
   master_number_of_executors: 10
   httpPort: 443
   slaveAgentPort: 50000
