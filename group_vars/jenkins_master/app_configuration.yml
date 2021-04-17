@@ -1,10 +1,11 @@
 invenory_group_jenkins_master_app_configuration:
+  jenkins_docker_image_path: wolfsea89/jenkins_master_snapshot:2021.4.13.3
   master_number_of_executors: 10
-  httpPort: 80
+  httpPort: 443
   slaveAgentPort: 50000
   location:
     adminAddress: jenkins@localhost
-    url: "http://jenkins-master.rachuna.net:8080"
+    url: "http://jenkins-master.rachuna.net:443"           # ha-proxy address
   sharedlibraries:
     - name: "Sharedlibraries"
       branch: "feature/class"
