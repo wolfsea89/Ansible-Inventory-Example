@@ -3,6 +3,8 @@ inventory_host_jenkins_slave_app_configuration:
   executors: 1
   labels:
   - slave_linux
+  - slave_ci_build_docker
+  - slave_ci_build_dotnet_core
   - slave_ci_build
   - slave_ci_publish
   - slave_ci_docker
